@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 600px;
+        overflow: auto;
+        display: flex;
+        margin: 100px auto;
+        margin-bottom: 20px;
+        scroll-snap-type: x mandatory;
+        scroll-behavior:    smooth;
+        /* border: solid thin; */
+        border-radius: 10px;
+        box-shadow: ;                                                               /* ADD BOX SHADOW  */
+    }
+     ::-webkit-scrollbar{
+        display: none;
+    }
+    .container .item{
+        display: flex;
+        margin: 10px 10px;
+        padding: 130px 0;
+        background: url(scewed\ meat\ banner.jpg);
+        background-size: cover;
+        transition: 6s;
+        /* scroll-snap-align: ; */
+        justify-content: space-between;
+        cursor: pointer;
+        border-radius: 10px;
+        margin-left: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+
+    
+   .container .item .link{
+       color: white;
+       visibility: hidden;
+       transition: 1.5s;
+   } 
+
+   .container .item .link .a-one{
+       margin-left: 20px;
+       margin-right: 200px;
+   } 
+
+   .container .item .link .a-back{
+       margin-right: 20px;
+       margin-left: 200px;
+   } 
+
+   .container .item .link i.material-icons{
+        font-size: 13px;
+        border: solid black;
+        background-color: black;
+        border-radius: 30px;
+        padding: 10px;
+    }
+
+    .container .item .link i.material-icons:hover{
+        background-color: rgb(46, 46, 46);
+    }
+
+
+</style>
+<body>
+    <div class="container" id="container" onmouseover="visibleCarouIcons();" onmouseout="invisibleCarouIcons();">
+        <div class="item card1" id="item1"  >
+             
+                <a href="#item4" id="onum" class="link" ><i class="material-icons a-one">arrow_back_ios</i></a>    
+                <a href="#item2" id="onum" class="link"><i class="material-icons a-back">arrow_forward_ios</i></a> 
+
+        </div>
+
+        <div class="item card2" id="item2">
+
+                <a href="#item1" id="onum" class="link"><i class="material-icons a-one">arrow_back_ios</i></a>    
+                <a href="#item3" id="onum" class="link"><i class="material-icons a-back">arrow_forward_ios</i></a> 
+
+        </div>
+
+
+        <div class="item card3" id="item3">
+
+                <a href="#item2" id="onum" class="link"><i class="material-icons a-one">arrow_back_ios</i></a>    
+                <a href="#item4" id="onum" class="link"><i class="material-icons a-back">arrow_forward_ios</i></a> 
+
+        </div>
+        <div class="item card4" id="item4">
+
+                <a href="#item3" id="onum" class="link"><i class="material-icons a-one">arrow_back_ios</i></a>    
+                <a href="#item1" id="onum" class="link"><i class="material-icons a-back">arrow_forward_ios</i></a> 
+
+
+        </div>
+    </div>
+
+    <!-- <button value="Stopp" onclick="clearTime();">Stop</button> -->
+
+
+    <script>
+        // document.body.style.backgroundColor = "yellow";
+
+        // document.getElementById("onum").style.color = "yellow";
+        const myOut = setTimeout(visibleCarouIcons);
+        const myOut2 = setTimeout(invisibleCarouIcons, 3000);
+        const myInt2 = setInterval(visibleCarouIcons, 20000);
+        const myInt3 = setInterval(invisibleCarouIcons, 30000)
+
+        function visibleCarouIcons(){
+            const collection = document.getElementsByClassName("link");
+
+            for(let i = 0; i < collection.length; i++){
+            collection[i].style.visibility ="visible";}
+        }
+
+        function invisibleCarouIcons(){
+            const collection = document.getElementsByClassName("link");
+
+            for(let i = 0; i < collection.length; i++){
+            collection[i].style.visibility ="hidden";} 
+        }
+
+
+        // const iniInterval = setTimeout(myInterval, 5000)
+        const myInterval = setInterval(scrollCarouFunction, 20000);
+        const interCall = setTimeout(scrollCarouFunction, 4000)
+
+        // function setOut(){
+            
+        //     const outSet = setTimeout(scrollCarouFunction, 1000)
+        // }
+
+        // function clearTime(){
+        //     clearTimeout(interCall)
+        // }
+
+            
+
+function scrollCarouFunction(){
+//     setTimeout(function()
+// {document.getElementById("container").scroll(300, 0);}, 1000);
+
+setTimeout(function()
+{document.getElementById("container").scroll(500, 0);}, 2000);
+
+// const elemnt = document.getElementById("container");
+setTimeout(function()
+{document.getElementById("container").scroll(700, 0);}, 7000);
+
+setTimeout(function()
+{document.getElementById("container").scroll(900, 0);}, 12000);
+
+setTimeout(function()
+{document.getElementById("container").scroll(0, 0);}, 17000);
+
+
+
+// setTimeout(function()
+// {document.getElementById("container").scroll(1200, 0);}, 10000);
+
+// setTimeout(function()
+// {document.getElementById("container").scroll(1400, 0);}, 12000);
+
+// setTimeout(function()
+// {document.getElementById("container").scroll(1600, 0);}, 14000);
+}
+    </script>
+</body>
+</html>

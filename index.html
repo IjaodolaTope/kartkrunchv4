@@ -1,0 +1,625 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
+    <title>KartKrunch- Find food, restaurants</title>
+</head>
+<body>
+    <header>
+        <section class="sctn1">
+            <i class="material-icons side-icon" style="border: none;">menu</i>
+      
+
+        <h2 class="logo">Kart<span>k</span>runch</h2> 
+        
+        <!-- <a href="#" class="person-icon"><i class="material-icons">person</i></a> -->
+
+        <div class="srch-dv">
+            <!-- <i class="material-icons supp-icon">support_agent</i> -->
+            <div class="contact-itrc">
+                <!-- <div style="display: flex; flex-direction: column; align-items: center; margin-right: 5%;"> -->
+                <!-- <p>Customer service</p> -->
+                <!-- </div> -->
+                <div class="input-div"> 
+                    <form action="">
+                        <input type="search" name="" id="" placeholder="find foods, brands, and stores...">
+                    </form>
+                    <i class="material-icons sch-icon">search</i>
+                </div>
+                <div class="sugg-search" style="display: none;">
+                    
+                </div>
+            </div>
+        </div>        
+
+        <!-- <a href="#" class="person-icon"><i class="material-symbols-outlined" style="font-size: 32px; color: black; margin-right: 10px; ">person</i></a> -->
+
+        <div class="lctn disp-nn">
+            <a href="#" class="Delvry-link">Delivery</a>
+            <!-- <i class="material-icons" style="margin-right: 10px; font-size: 28px;">delivery_dining</i> -->
+            <p class="locatn-tt">to</p>
+            <h4 class="address">31, Shifau ikosi,Ketu,...</h4>
+            <i class="material-icons exd-ltcn">expand_more</i>
+        </div>
+
+        <!-- <p class="cart-text">Cart</p> -->
+        <div class="ct-dv" style="margin: 0;">  
+            <a href="#" class="ct-link"><span class="material-symbols-outlined ct-icon" >shopping_cart</span><p class="ct-text">0</p></a>
+        </div>
+
+        </section>
+
+        <section class="sctn2">
+            <div class="lctn1">
+                <!-- <a href="#" class="Delvry-link1">Delivery</a> -->
+                <!-- <i class="material-icons" style="margin-right: 8px; font-size: 18px; color: rgba(179, 179, 179);">location_on</i> -->
+                <!-- <p class="locatn-tt1">to</p> -->
+                <h4 class="address1">31, Shifau ikosi,Ketu,... </h4><i class="material-icons" style="color: rgba(179, 179, 179);">expand_more</i>
+                <!-- <i class="material-icons expand-lctn-icon1">expand_more</i> -->
+            </div>
+        </section>
+
+        <section class="section52">
+            <!-- <p>Delivery categories</p> -->
+        <div class="category-crcl">
+            <div>
+                <img src="reshot-icon-burger-65WMPA4BZJ.svg" alt="">
+            </div>
+            <div>
+                <img src="reshot-icon-coffee-YKJ5A4N3VS.svg" alt="">
+            </div>
+            <div>
+                <img src="reshot-icon-pizza-4DA5JZH9TW.svg" alt="">
+            </div>
+            <div>
+                <img src="reshot-icon-shaurma-PXDM7TUYCW.svg" alt="">
+            </div>
+            <div>
+                <img src="reshot-icon-kebab-U86TYFEQXK.svg" alt="">
+            </div>
+            <div>
+                <img src="reshot-icon-pizza-4DA5JZH9TW.svg" alt="">
+            </div>
+            <div>
+                <img src="reshot-icon-burger-65WMPA4BZJ.svg" alt="">
+            </div>
+            <div>
+                <img src="reshot-icon-coffee-YKJ5A4N3VS.svg" alt="">
+            </div>
+            <div>
+                <img src="reshot-icon-pizza-4DA5JZH9TW.svg" alt="">
+            </div>
+            <div>
+                <img src="reshot-icon-shaurma-PXDM7TUYCW.svg" alt="">
+            </div>
+            <div>
+                <img src="reshot-icon-kebab-U86TYFEQXK.svg" alt="">
+            </div>
+            <div>
+                <img src="reshot-icon-pizza-4DA5JZH9TW.svg" alt="">
+            </div>
+       
+        </div>
+
+        </section>
+
+        <section class="sctn3" style="border: ; align-items: center;">
+                <div class="scrollcrcl" id="scrollcrcl">
+                    <!-- <a href="#"><p style="position: absolute;">Home</p> </a>
+                    <a href="#"><p style="position: absolute;">Home</p> </a> -->
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+
+<!--CARI STARTS HERE-->                                             <!--CARI STARTS HERE-->
+                <div class="cari">             
+                    <section class="section4">
+                         <span class="carou-span"><a href="#" class="carou-cont" ></a></span>
+                         <!-- CAROUSEL CONTAINER STARTS HERE -->
+                        <div class="container" id="container" style="border: ;" onmouseover="visibleCarouIcons();" onmouseout="invisibleCarouIcons();">
+                             <span class="space-span"></span>
+                            
+                             <div  class="food-CARD"><!-- FOOD CARDS HERE -->
+                                <div class="item card1" id="item1"><a href="#item2" id="onum" class="link" ><i class="material-icons a-one">arrow_back_ios</i></a>    <a href="#item2" id="onum" class="link"><i class="material-icons a-back">arrow_forward_ios</i></a></div>
+                                <div  class="food-decpt">
+                                    <div class="food-decpt-logo">
+                                        <span class="food-decpt-logo-span1"> <img src="Dominos Pizza Logo.png" alt="" class="food-decpt-logo-span1-img">   <p class="food-decpt-logo-span1-name">Domino's pizza</p></span>
+                                        <span class="food-decpt-logo-span2"> <p>15 - 40:00 mins +</p> </span>
+                                        <span class="span2"><p class="food-cat-offr">food cat. </p> <i class="material-icons offr-icon">expand_more</i> </span>
+                                    </div> <!-- <div class="other-item"><span> <p class="rate">5.6/54k ratings</p> </span> </div> -->           
+                                </div>  
+                             </div><!-- FOOD CARD ENDS HERE -->
+
+                              
+                            <div  class="food-CARD"><!-- FOOD CARDS HERE -->
+                                <div class="item card1" id="item2"><a href="#item1" id="onum" class="link" ><i class="material-icons a-one">arrow_back_ios</i></a>    <a href="#item1" id="onum" class="link"><i class="material-icons a-back">arrow_forward_ios</i></a></div>
+                                <div  class="food-decpt">
+                                    <div class="food-decpt-logo">
+                                        <span class="food-decpt-logo-span1"> <img src="Dominos Pizza Logo.png" alt="" class="food-decpt-logo-span1-img">   <p class="food-decpt-logo-span1-name">Domino's pizza</p></span>
+                                        <span class="food-decpt-logo-span2"> <p>15 - 40:00 mins +</p> </span>
+                                        <span class="span2"><p class="food-cat-offr">food cat. </p> <i class="material-icons offr-icon">expand_more</i> </span>
+                                    </div> <!-- <div class="other-item"><span> <p class="rate">5.6/54k ratings</p> </span> </div> -->           
+                                </div>  
+                             </div><!-- FOOD CARD ENDS HERE -->  
+                             
+                             <div  class="food-CARD"><!-- FOOD CARDS HERE -->
+                                <div class="item card1" id="item1"><a href="#item2" id="onum" class="link" ><i class="material-icons a-one">arrow_back_ios</i></a>    <a href="#item2" id="onum" class="link"><i class="material-icons a-back">arrow_forward_ios</i></a></div>
+                                <div  class="food-decpt">
+                                    <div class="food-decpt-logo">
+                                        <span class="food-decpt-logo-span1"> <img src="Dominos Pizza Logo.png" alt="" class="food-decpt-logo-span1-img">   <p class="food-decpt-logo-span1-name">Domino's pizza</p></span>
+                                        <span class="food-decpt-logo-span2"> <p>15 - 40:00 mins +</p> </span>
+                                        <span class="span2"><p class="food-cat-offr">food cat. </p> <i class="material-icons offr-icon">expand_more</i> </span>
+                                    </div> <!-- <div class="other-item"><span> <p class="rate">5.6/54k ratings</p> </span> </div> -->           
+                                </div>  
+                             </div><!-- FOOD CARD ENDS HERE -->
+                    
+                             <div  class="food-CARD"><!-- FOOD CARDS HERE -->
+                                <div class="item card1" id="item1"><a href="#item2" id="onum" class="link" ><i class="material-icons a-one">arrow_back_ios</i></a>    <a href="#item2" id="onum" class="link"><i class="material-icons a-back">arrow_forward_ios</i></a></div>
+                                <div  class="food-decpt">
+                                    <div class="food-decpt-logo">
+                                        <span class="food-decpt-logo-span1"> <img src="Dominos Pizza Logo.png" alt="" class="food-decpt-logo-span1-img">   <p class="food-decpt-logo-span1-name">Domino's pizza</p></span>
+                                        <span class="food-decpt-logo-span2"> <p>15 - 40:00 mins +</p> </span>
+                                        <span class="span2"><p class="food-cat-offr">food cat. </p> <i class="material-icons offr-icon">expand_more</i> </span>
+                                    </div> <!-- <div class="other-item"><span> <p class="rate">5.6/54k ratings</p> </span> </div> -->           
+                                </div>  
+                             </div><!-- FOOD CARD ENDS HERE -->
+
+                        </section>     <!--SECTION CAROUSEL HERE-->
+
+
+                    <div class="container2">     <!--CONTAINER 2-->
+                        <div class="container2section">
+                            <a href="#">
+                                <div class="category-title">
+                                    <p class="food-category-title">Food Categories</p>
+                                    <span><p>filter</p><i class="material-icons">expand_more</i></span>
+                                </div>
+                            </a>
+             
+                            <div class="category-item-div">
+                                <a href="#">
+                                    <div class="categoryitem">
+                                        <span><p>Ordered around you</p>    <img src="reshot-icon-chicken-legs-GQJ7E3VUHD.svg" alt=""></span>
+                                        <span><i class="material-icons">favorite_outlined</i>  <p class="p2">2M</p></span>
+                                    </div>
+                                </a>
+
+                                <a href="#">
+                                    <div class="categoryitem">
+                                        <span><p>Best PIzza Around</p>    <img src="reshot-icon-pizza-4DA5JZH9TW.svg" alt=""></span>
+                                        <span><i class="material-icons">favorite_outlined</i>  <p class="p2">2M</p></span>
+                                    </div>
+                                </a>
+
+                                <a href="#">
+                                    <div class="categoryitem">
+                                        <span><p>Shauwarma Day !</p>    <img src="reshot-icon-shaurma-PXDM7TUYCW.svg" alt=""></span>
+                                        <span><i class="material-icons">favorite_outlined</i>  <p class="p2">2M</p></span>
+                                    </div>
+                                </a>
+
+                                <a href="#">
+                                    <div class="categoryitem">
+                                        <span><p>Buy Asun</p>    <img src="reshot-icon-kebab-U86TYFEQXK.svg" alt=""></span>
+                                        <span><i class="material-icons">favorite_outlined</i>  <p class="p2">2M</p></span>
+                                    </div>
+                                </a>
+
+                                <a href="#">
+                                    <div class="categoryitem">
+                                        <span><p>Closest store to you</p>    <img src="kfc logo.png" alt=""></span>
+                                        <span><i class="material-icons">favorite_outlined</i>  <p class="p2">2M</p></span>
+                                    </div>
+                                </a>
+
+                                <a href="#">
+                                    <div class="categoryitem">
+                                        <span><p>New PIzza Brands</p>    <img src="Dodo pizza logo.png" alt=""></span>
+                                        <span><i class="material-icons">favorite_outlined</i>  <p class="p2">4.5M</p></span>
+                                    </div>
+                                </a>
+                            </div>
+             
+                        </div> <!--CONTAINER SECTION2 ENDS HERE-->
+             
+                        <!-- SHUFFLE DIV BUTTON -->
+                        <div class="shuffle-container" style="border:  thin; height: 41px; margin-top: 10px; border-radius: 20px;">
+                            <a href="#" class="shuffle-cont" >
+                                <p>Shuffle</p>
+                                <img src="shuffle-arrows.png" alt="">
+                             </a>
+                        </div>    <!-- SHUFFLE DIV BUTTON ENDS -->
+                        
+                    </div>    <!--CONTAINER 2 ENDS HERE-->
+                    
+                </section>
+            </div>                      <!--CARI ENDS HERE-->
+
+
+
+
+
+
+
+
+        <section class="section5" >
+            <!-- <p>Delivery categories</p> -->
+        <div class="category-crcl">
+            <a href="">
+                <div  class="category-crcl-item">
+                    <span class="span1">
+                        <img src="Dodo pizza logo.png" alt="">
+                    </span>
+                    <span class="span2">
+                        <p>Dodo Pizza</p>
+                    </span>
+                </div>
+            </a>
+            
+            <a href="">
+                <div  class="category-crcl-item">
+                    <span class="span1">
+                        <img src="Gidi Burger logo.png" alt="">
+                    </span>
+                    <span class="span2">
+                        <p>Gidi Burger</p>
+                    </span>
+                </div>
+            </a>
+
+            <a href="">
+                <div  class="category-crcl-item">
+                    <span class="span1">
+                        <img src="kfc logo.png" alt="">
+                    </span>
+                    <span class="span2">
+                        <p>Domino's Pizza</p>
+                    </span>
+                </div>
+            </a>
+
+            <a href="">
+                <div  class="category-crcl-item">
+                    <span class="span1">
+                        <img src="kfc logo.png" alt="">
+                    </span>
+                    <span class="span2">
+                        <p>Dodo Pizza</p>
+                    </span>
+                </div>
+            </a>
+       
+            <a href="">
+                <div  class="category-crcl-item">
+                    <span class="span1">
+                        <img src="kfc logo.png" alt="">
+                    </span>
+                    <span class="span2">
+                        <p>Dodo Pizza</p>
+                    </span>
+                </div>
+            </a>
+            <a href="">
+                <div  class="category-crcl-item">
+                    <span class="span1">
+                        <img src="kfc logo.png" alt="">
+                    </span>
+                    <span class="span2">
+                        <p>Dodo Pizza</p>
+                    </span>
+                </div>
+            </a>
+        </div>
+
+        </section>
+             
+        <section class="section6">
+            <div><span class="title">
+                <img src="confetti (2).png" alt="">
+            <span style="flex-direction: column;">
+                <p>Welcome Deals!</p>
+                <h5>FREE DELIVERIES</h5>
+            </span>
+
+            </span >
+                <span class="filter">
+                <p>View all </p>
+                <i class="material-icons">arrow_forward</i></span>
+            </div>
+            
+            <div class="product-wrapper">
+                <a href="#">
+                    <span class="product">
+                        <span class="card-img">
+                            <img src="dominosbrand2.jpg" alt="">
+                        </span> 
+                        <span class="product-store">
+                            <img src="kfc logo.png" alt="">
+                            <p>KFC Chicken</p>
+                        </span>
+                        <span class="product-del-time">
+                            <p>15 mins. +</p>
+                        </span>
+                        <span class="product-store-status">
+                            <p class="open">open</p>
+                            <p class="closed">closed</p>
+                            <p class="rated">9.8/10k</p>
+                        </span>
+                    </span>
+                </a>
+                <a href="">
+                    <span class="product product-specific">
+                        <span class="card-img">
+                            <img src="Dodo-pizza-pizza Duet.webp" alt="">
+                        </span>                       
+                        <span class="product-store">
+                            <img src="Dodo pizza logo.png" alt="">
+                            <p>3 in 1 Dodo supreme for 2 in 3 fsk,m </p>
+                        </span>
+                        <span class="product-del-time">
+                            <p>35 mins. +</p>
+                        </span>
+                        <span class="product-store-status">
+                            <p class="open">open</p>
+                            <p class="closed">closed</p>
+                            <p class="rated">9.8/10k</p>
+                        </span>
+                    </span>
+                </a>
+                <a href="">
+                    <span class="product">
+                        <span class="card-img">
+                            <img src="dodo-pizza-combo-for-2.webp" alt="">
+                        </span>                       
+                        <span class="product-store">
+                            <img src="Dodo pizza logo.png" alt="">
+                            <p>Dodo Pizza</p>
+                        </span>
+                        <span class="product-del-time">
+                            <p>35 mins. +</p>
+                        </span>
+                        <span class="product-store-status">
+                            <p class="open">open</p>
+                            <p class="closed">closed</p>
+                            <p class="rated">9.8/10k</p>
+                        </span>
+                    </span>
+                </a>
+                <a href=""><span class="product"></span></a>
+                <a href=""><span class="product"></span></a>
+                <a href=""><span class="product"></span></a>
+                <a href=""><span class="product"></span></a>
+            </div>
+        </section>
+
+        <section class="section7">
+            <div class="title-div" style="border-radius: 0px;">
+                <span class="title">
+                    <img src="pizza-svgrepo-com.svg" alt="">
+                <span style="">
+                    <p>Quick Buy</p>
+                </span>
+    
+                </span >
+                    <!-- <span class="filter">
+                    <p>filter </p>
+                    <i class="material-icons">expand_more</i></span> -->
+            </div>
+            <div class="quick-buy-product">
+                <a href="https://dodopizza.ng/lagos/combo/11EC327F955EEBAD03F6DB40F24D4B70" >
+                <div class="product">
+                    <span class="product-image">
+                        <img src="Dodo-pizza-pizza Duet.webp" alt="">
+                    </span>
+                    <span class="product-description">
+                        <span class="product-id">
+                            <img src="Dodo pizza logo.png" alt="">
+                            <p>3 in 1 Kfc bucket ! for max taste pleasure ...</p>
+                        </span>
+                        <span class="product-del-time">
+                            <p>15 mins. +</p>
+                        </span>
+                        <span class="product-store-status">
+                            <p class="open">open</p>
+                            <p class="closed">closed</p>
+                            <p class="visit">visit</p>
+                        </span>
+                    </span>
+                </div>
+                </a>
+            </div>
+
+        </section>
+
+        <section class="section6" style="margin-top: 10px;">
+            <div style="background-color: rgb(0, 128, 0, 0.5);"><span class="title">
+                <img src="reshot-icon-chicken-3F7BXY52S8.svg" alt="">
+            <span style="flex-direction: column;">
+                <p>Best Chicken Meals.</p>
+                <h5>BEST MEALS</h5>
+            </span>
+
+            </span >
+                <span class="filter">
+                <p>View all </p>
+                <i class="material-icons">arrow_forward</i></span>
+            </div>
+            
+            <div class="product-wrapper">
+                <a href="#">
+                    <span class="product">
+                        <img src="dominosbrand2.jpg" alt="" class="card-img">
+                        <span class="product-store">
+                            <img src="kfc logo.png" alt="">
+                            <p>KFC Chicken</p>
+                        </span>
+                        <span class="product-del-time">
+                            <p>15 mins. +</p>
+                        </span>
+                        <span class="product-store-status">
+                            <p class="open">open</p>
+                            <p class="closed">closed</p>
+                            <p class="rated">9.8/10k</p>
+                        </span>
+                    </span>
+                </a>
+                <a href=""><span class="product"></span></a>
+                <a href=""><span class="product"></span></a>
+                <a href=""><span class="product"></span></a>
+                <a href=""><span class="product"></span></a>
+                <a href=""><span class="product"></span></a>
+                <a href=""><span class="product"></span></a>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+    <script>
+        const myOut = setTimeout(visibleCarouIcons);
+const myOut2 = setTimeout(invisibleCarouIcons, 3000);
+const myInt2 = setInterval(visibleCarouIcons, 20000);
+const myInt3 = setInterval(invisibleCarouIcons, 30000)
+
+function visibleCarouIcons(){
+    const collection = document.getElementsByClassName("link");
+
+    for(let i = 0; i < collection.length; i++){
+    collection[i].style.visibility ="visible";}
+}
+
+function invisibleCarouIcons(){
+    const collection = document.getElementsByClassName("link");
+
+    for(let i = 0; i < collection.length; i++){
+    collection[i].style.visibility ="hidden";} 
+}
+
+const sideOut = setTimeout(sideoutFunction, 1000);
+
+    function sideoutFunction(){
+        setTimeout(function(){document.getElementById("side-icon").style.backgroundColor = "rgb(255, 165, 0, 0.3)";}, 1000);;
+        setTimeout(function(){document.getElementById("side-icon").style.backgroundColor = "white";}, 1300);;
+        setTimeout(function(){document.getElementById("side-icon").style.backgroundColor = "rgb(255, 165, 0, 0.3)";}, 1600);;
+        setTimeout(function(){document.getElementById("side-icon").style.backgroundColor = "white";}, 1900);;
+        setTimeout(function(){document.getElementById("side-icon").style.backgroundColor = "rgb(255, 165, 0, 0.3)";}, 2100);;
+        setTimeout(function(){document.getElementById("side-icon").style.backgroundColor = "white";}, 2400);;
+        setTimeout(function(){document.getElementById("side-icon").style.backgroundColor = "rgb(255, 165, 0, 0.3)";}, 2700);;
+        setTimeout(function(){document.getElementById("side-icon").style.backgroundColor = "white";},3000);;
+        setTimeout(function(){document.getElementById("side-icon").style.backgroundColor = "rgb(255, 165, 0, 0.3)";}, 3500);;
+        setTimeout(function(){document.getElementById("side-icon").style.backgroundColor = "white";}, 5000);;
+
+    }
+
+    // sideoutFunction();
+    const myInterval = setInterval(scrollFunction, 13000);
+
+function scrollFunction(){
+    setTimeout(function()
+{document.getElementById("scrollCrcl").scroll(300, 0);}, 1000);
+
+setTimeout(function()
+{document.getElementById("scrollCrcl").scroll(500, 0);}, 4000);
+
+// const elemnt = document.getElementById("container");
+setTimeout(function()
+{document.getElementById("scrollCrcl").scroll(700, 0);}, 6000);
+
+setTimeout(function()
+{document.getElementById("scrollCrcl").scroll(900, 0);}, 8000);
+
+setTimeout(function()
+{document.getElementById("scrollCrcl").scroll(1200, 0);}, 10000);
+
+setTimeout(function()
+{document.getElementById("scrollCrcl").scroll(1400, 0);}, 12000);
+
+setTimeout(function()
+{document.getElementById("scrollCrcl").scroll(1600, 0);}, 14000);
+
+}
+
+
+const catInterval = setInterval(catFunction, 4100);
+// document.getElementById("cat-feed").scroll(0, 30);
+
+//  catFunction();
+function catFunction(){
+    setTimeout(function()
+{document.getElementById("cat-feed").scroll(0, 30);}, 1000);
+
+setTimeout(function()
+{document.getElementById("cat-feed").scroll(0, 50);}, 2000);
+
+// const elemnt = document.getElementById("container");
+setTimeout(function()
+{document.getElementById("cat-feed").scroll(0, 60);}, 3000);
+
+setTimeout(function()
+{document.getElementById("cat-feed").scroll(0, 90);}, 4000);
+
+// setTimeout(function()
+// {document.getElementById("cat-feed").scroll(900, 0);}, 8000);
+
+// setTimeout(function()
+// {document.getElementById("cat-feed").scroll(1200, 0);}, 10000);
+
+// setTimeout(function()
+// {document.getElementById("cat-feed").scroll(1400, 0);}, 12000);
+
+// setTimeout(function()
+// {document.getElementById("cat-feed").scroll(1600, 0);}, 14000);
+
+}
+    </script>
+</body>
+</html>
