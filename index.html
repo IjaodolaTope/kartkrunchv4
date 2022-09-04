@@ -21,7 +21,9 @@
                     <div class="user-image"> <!-- <img src="GAME IMG2.jpg" alt=""> --><h1>T</h1> </div>
                     <div class="user-descrpt">
                         <div class="user-name"> <h2>Tope Ijaodola</h2> </div>
-                        <div class="theme"> <p>theme:</p><div class="theme-selector"> <div class="span-1"></div> <div class="span-2"></div> <i class="material-icons">expand_more</i></div>
+                        <div class="theme">
+                             <!-- <p>theme:</p> -->
+                            <div class="theme-selector"> <div class="span-1"></div> <div class="span-2"></div> <i class="material-icons">expand_more</i></div>
                     </div>
                     </div>
                 </div>
@@ -36,7 +38,7 @@
                 <div class="options">
                     <a href="#">
                         <div class="you option">
-                            <div class="icon"> <img src="orangered user icon.png" alt=""> </div>
+                            <div class="icon"><i class="material-icons">person</i></div>
                             <div class="descrpt">
                                 <div class="top-text"> <p>You</p> </div>
                                 <div class="btm-text"> <p>Settings, Order history, favourites..</p> </div>
@@ -56,7 +58,7 @@
                     <a href="#">
                         <div class="option">
                             
-                            <div class="title" style="width: 75%; justify-content: right; border:  silver 1px;">
+                            <div class="title" style="width: 80%; justify-content: right; border:  silver 1px;">
                                 <p>Promo | Under 5k deals </p>
                             </div>
                             <div class="icon" style="width: ; justify-content: left; border:  silver 1px;">
@@ -89,6 +91,9 @@
                         </div>
                     </a>
                 </div>
+                <div class="FAQ-option">
+                    <a href="#">Have a question? <span>FAQ</span></a>
+                </div>
             </div>
         </section>
         <!-- <span style="
@@ -98,10 +103,12 @@
         <section class="sctn1">
             <!-- <i class="material-icons side-icon" style="border: none;">menu</i> -->
       
+            <i class="material-icons side-icon" onclick="makeSideBarAppear()" id="menuicon1" >menu</i>
+            <i class="material-icons side-icon" style="display: none;" id="menuicon2" onclick="makeSideBarDissapear()">close</i>
 
         <h2 class="logo">Kart<span>k</span>runch</h2> 
         
-        <!-- <a href="#" class="person-icon"><i class="material-icons">person</i></a> -->
+     
 
         <div class="srch-dv">
             <!-- <i class="material-icons supp-icon">support_agent</i> -->
@@ -120,7 +127,7 @@
                 </div>
             </div>
         </div>        
-
+   <!-- <a href="#" class="person-icon"><i class="material-icons">person</i></a> -->
         <!-- <a href="#" class="person-icon"><i class="material-symbols-outlined" style="font-size: 32px; color: black; margin-right: 10px; ">person</i></a> -->
 
         <div class="lctn disp-nn">
@@ -130,9 +137,9 @@
             <h4 class="address">31, Shifau ikosi,Ketu,...</h4>
             <i class="material-icons exd-ltcn">expand_more</i>
         </div>        <!-- <p class="cart-text">Cart</p> -->
-
+<!-- 
         <i class="material-icons side-icon" onclick="makeSideBarAppear()" id="menuicon1" >menu</i>
-        <i class="material-icons side-icon" style="display: none;" id="menuicon2" onclick="makeSideBarDissapear()">close</i>
+        <i class="material-icons side-icon" style="display: none;" id="menuicon2" onclick="makeSideBarDissapear()">close</i> -->
         <!-- <div class="ct-dv" style="margin: 0;">  
             <a href="#" class="ct-link"><span class="material-symbols-outlined ct-icon" >shopping_cart</span><p class="ct-text">0</p></a>
         </div> -->
@@ -411,6 +418,11 @@
 
         </section>
              
+
+
+
+
+
         <section class="section6">
             <div><span class="title">
                 <img src="confetti (2).png" alt="">
@@ -421,8 +433,8 @@
 
             </span >
                 <span class="filter">
-                <p>View all </p>
-                <i class="material-icons">arrow_forward</i></span>
+                <p>filter</p>
+                <i class="material-icons">chevron_right</i></span>
             </div>
             
             <div class="product-wrapper">
@@ -441,7 +453,7 @@
                         <span class="product-store-status">
                             <p class="open">open</p>
                             <p class="closed">closed</p>
-                            <p class="rated">9.8/10k</p>
+                            <p class="rated">rated: 8.5/10</p>
                         </span>
                     </span>
                 </a>
@@ -452,7 +464,7 @@
                         </span>                       
                         <span class="product-store">
                             <img src="Dodo pizza logo.png" alt="">
-                            <p>3 in 1 Dodo supreme for 2 in 3 fsk,m </p>
+                            <p>Pizza Duet deal form Dodo Pizza</p>
                         </span>
                         <span class="product-del-time">
                             <p>35 mins.+</p>
@@ -460,7 +472,7 @@
                         <span class="product-store-status">
                             <p class="open">open</p>
                             <p class="closed">closed</p>
-                            <p class="rated">9.8/10k</p>
+                            <p class="rated">rated: 3/10</p>
                         </span>
                     </span>
                 </a>
@@ -512,7 +524,26 @@
 
 
 
-
+        <section class="sectiondeal">
+            <div class="title">
+                <h2>Happy Hour Deals</h2>
+            </div>
+            <div class="box">
+                <a href="">
+                    <div class="unit">
+                        <img src="dodo-pizza-family-deal.webp" alt="">
+                        <span class="span1">
+                            <p class="p">Dodo Pizza</p>
+                            <span class="span-dot"></span>
+                            <h4>rated: 7/10</h4>
+                        </span>
+                            
+                            <p class="p1">Dodo Pizza family deal designed for a faily of 5 or more.</p>
+                            <p class="p2">Visit </p>
+                    </div>
+                </a>
+            </div>
+        </section>
 
 
         <section class="section7">
@@ -528,7 +559,7 @@
                     <p>filter </p>
                     <i class="material-icons">expand_more</i></span> -->
             </div>
-            <div class="quick-buy-product">
+            <div class="quick-buy-product" style="overflow: auto;">
                 <a href="https://dodopizza.ng/lagos/combo/11EC327F955EEBAD03F6DB40F24D4B70" >
                 <div class="product">
                     <span class="product-image">
@@ -550,6 +581,50 @@
                     </span>
                 </div>
                 </a>
+
+                <a href="https://dodopizza.ng/lagos/combo/11EC327F955EEBAD03F6DB40F24D4B70" >
+                    <div class="product">
+                        <span class="product-image">
+                            <img src="Dodo-pizza-pizza Duet.webp" alt="">
+                        </span>
+                        <span class="product-description">
+                            <span class="product-id">
+                                <img src="Dodo pizza logo.png" alt="">
+                                <p>3 in 1 Kfc bucket ! for max taste pleasure ...</p>
+                            </span>
+                            <span class="product-del-time">
+                                <p>15 mins. +</p>
+                            </span>
+                            <span class="product-store-status">
+                                <p class="open">open</p>
+                                <p class="closed">closed</p>
+                                <p class="visit">visit</p>
+                            </span>
+                        </span>
+                    </div>
+                    </a>
+
+                    <a href="https://dodopizza.ng/lagos/combo/11EC327F955EEBAD03F6DB40F24D4B70" >
+                        <div class="product">
+                            <span class="product-image">
+                                <img src="Dodo-pizza-pizza Duet.webp" alt="">
+                            </span>
+                            <span class="product-description">
+                                <span class="product-id">
+                                    <img src="Dodo pizza logo.png" alt="">
+                                    <p>3 in 1 Kfc bucket ! for max taste pleasure ...</p>
+                                </span>
+                                <span class="product-del-time">
+                                    <p>15 mins. +</p>
+                                </span>
+                                <span class="product-store-status">
+                                    <p class="open">open</p>
+                                    <p class="closed">closed</p>
+                                    <p class="visit">visit</p>
+                                </span>
+                            </span>
+                        </div>
+                        </a>
             </div>
 
         </section>
@@ -565,7 +640,7 @@
             </span >
                 <span class="filter">
                 <p>View all </p>
-                <i class="material-icons">arrow_forward</i></span>
+                <i class="material-icons">chevron_right</i></span>
             </div>
             
             <div class="product-wrapper">
@@ -768,19 +843,23 @@ setTimeout(function()
 function makeSideBarAppear(){
     document.getElementById("sidebar").style.width = "350px";
     document.getElementById("sidebar").style.height = "100%";
-    document.getElementById("sidebar").style.visibility = "visible";
+    // document.getElementById("sidebar").style.visibility = "visible";
     document.getElementById("sidebar").style.opacity = "1";
     document.getElementById("menuicon1").style.display = "none";
     document.getElementById("menuicon2").style.display = "block";
+    document.getElementById("sidebar").style.marginLeft = "0";
+
 }
 
 function makeSideBarDissapear() {
     document.getElementById("sidebar").style.width = "0";
     document.getElementById("sidebar").style.height = "100%";
-    document.getElementById("sidebar").style.visibility = "hidden";
+    // document.getElementById("sidebar").style.visibility = "hidden";
     document.getElementById("sidebar").style.opacity = "0.1";
     document.getElementById("menuicon1").style.display = "block";
     document.getElementById("menuicon2").style.display = "none";
+    document.getElementById("sidebar").style.marginLeft = "-360px";
+
 }
 
 </script>

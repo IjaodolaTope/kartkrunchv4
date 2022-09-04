@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap'); */
 body{
     background-color: #f4f4f4;
     /* background-color:  */
@@ -10,21 +10,22 @@ body{
     margin: 0;
     padding: 0;
     /* background-color: rgba(192, 192, 192, 0.322); */
-    font-family: 'Roboto';
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: 'Montserrat';
 }
 
 .section-sidebar{
     margin-top: 43px;
     visibility: visible;
     height: 95vh;
-    width: 350px;
+    width: 0;
     /* width: -350px; */
-    transition: 400ms;
-    opacity: 0;
+    transition: 0.3s;
     box-shadow: none;
     padding: 0;
     background-color: white;
     position: fixed;
+    margin-left: -360px;
     /* border: 1px Solid gold; */
     box-shadow: 3px 1px 15px 1px rgb(128, 128, 128, 0.4);
 }
@@ -60,8 +61,8 @@ body{
 .section-sidebar .wrapper .user .user-image img{
     margin: 0 auto !important;
     border-radius:100%;
-    height: 63px;
-    width: 65px;
+    height: 55px;
+    width: 55px;
     /* border: 1px Gold solid ; */
     margin-left: auto;
     opacity: 2;
@@ -71,14 +72,14 @@ body{
 .section-sidebar .wrapper .user .user-image h1{
     border: solid 1px white;
     border-radius:100%;
-    height: 63px;
-    width: 65px;
+    height: 55px;
+    width: 55px;
     text-align: center;
     background-color: rgb(128, 0, 128, 0.6);
     /* background-color: rgb(0, 128, 0, 0.6); */
     color: white;
     font-size: 35px;
-    padding-top: 11px;
+    padding-top: 5.8px;
 }
 
 .section-sidebar .wrapper .user .user-descrpt{
@@ -105,7 +106,7 @@ body{
 }
 
 .section-sidebar .wrapper .user .theme{
-   width: 45.4%;
+   width: 26%;
    border: solid 1px silver; 
    border-radius: 5px;
     margin-left: auto;
@@ -248,6 +249,7 @@ body{
     /* flex-direction: column; */
     align-items: flex-end;
     justify-content: left;
+    
 }
 
 .section-sidebar .wrapper .options a .you .descrpt .top-text p{
@@ -256,7 +258,6 @@ body{
     color: rgba(43, 43, 43, 0.5);
     font-family: 'Open Sans';
     text-align: left;
-    text-shadow: 0.5px 0.5px rgb(192, 192, 192, 0.4);
 }
 
 .section-sidebar .wrapper .options a .you .descrpt .btm-text{
@@ -274,7 +275,6 @@ body{
     color: rgb(0, 0, 0, 0.3);
     font-family: 'Open Sans';
     text-align: left;
-    text-shadow: 1px 1px silver;
 }
 
 .section-sidebar .wrapper .options a .option{
@@ -313,12 +313,11 @@ body{
 
 .section-sidebar .wrapper .options a .option .title p{
     /* border: solid gold 1px; */
-    font-size: 16.5px;
+    font-size: 18px;
     font-weight: 700;
     color: rgba(43, 43, 43, 0.5);
     font-family: 'Open Sans';
     /* text-align: left; */
-    text-shadow: 1px 1px silver;
     height: 24px;
 }
 
@@ -398,15 +397,15 @@ header{
 
 .sctn1{ 
     border-bottom: none;
-    padding: 6px 3.5%;
+    padding: 0 3.5%;
     box-shadow: none;
     width: auto;
     margin:0;
-
+    height: 60px;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-
+    padding-right: 3px;
     /* font-size: 20px; */
 }
 
@@ -444,9 +443,10 @@ cursor: pointer;
 .logo{
     cursor: pointer;
     color: orangered;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif !important;
     margin-right: auto;
-    font-size: 20px;
+    margin-left: 10px;
+    font-size: 23px;
 }
 
 .logo span{
@@ -469,7 +469,7 @@ button:hover{
 }
 
 header .srch-dv{
-    margin-right: 3%;
+    margin-right: 0%;
     display: flex;
     /* flex-direction: row; */
     align-items: center;
@@ -490,9 +490,9 @@ header .srch-dv .supp-icon{display: none;}
 
 .sch-icon{margin-top: auto; margin-bottom: auto; margin-right: 10px; color: black; font-size: 20px;
 /* border: solid thin silver; */
-    padding: 3px 5px;
+    padding: 5px 5px;
         border-radius: 10px;
-        border: solid 1px yellow;
+        border: solid 1px orangered;
 }
 
 header .srch-dv .contact-itrc .input-div form input[type=search]{display: none;
@@ -556,7 +556,7 @@ header .srch-dv .contact-itrc .sugg-search{
     }
     
 .locatn-tt1{
-    margin-right: 10px; font-family:Roboto, Oxygen, Ubuntu,Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size: 15px;}
+    margin-right: 10px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 15px;}
     
 .address1{font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  font-size: 14px; color: rgb(179, 179, 179); 
     margin-top: auto; margin-bottom: auto; padding: 5px 0;
@@ -571,7 +571,7 @@ header .srch-dv .contact-itrc .sugg-search{
         margin-top: 8px;
         padding: 0; 
         padding-top: 3.8%;
-        padding-bottom: 2%;
+        padding-bottom: 1.5%;
         /* box-shadow: none; */
         border: none !important;
         box-shadow: 0.01px 0.01px 1px rgba(176, 176, 176, 0.274) !important;
@@ -585,7 +585,7 @@ header .srch-dv .contact-itrc .sugg-search{
         overflow-y: hidden;
         white-space: nowrap;
         padding-top: 0;
-        height: 15vh;
+        height: 16vh;
         padding-bottom: 0;
         /* border: solid 1px gold; */
     }
@@ -601,13 +601,13 @@ header .srch-dv .contact-itrc .sugg-search{
         border: none;
         padding: 0;    
         width: 280px;
-        height: 90%;
+        height: 92%;
         margin: 0;
         text-decoration: none;
         margin-right: 3px;
         background-size: 100% 100%;
         background-image: url(kfc\ image.jpg);
-        border-radius: 8px;
+        border-radius: 6px;
         margin-bottom: 0;
     }
 
@@ -707,10 +707,11 @@ header .srch-dv .contact-itrc .sugg-search{
         text-align: center;
         width: 100%;
         /* background-color: rgba(250, 212, 217, 0.178); */
-        background-color: rgb(255, 0, 0, 0.7);
-        /* border-top-left-radius: 9px;
-        border-top-right-radius: 9px; */
-        padding: 3.4px 4.5%;
+        background-color: red;
+        /* background-color: white !important; */
+        border-top-left-radius: 9px;
+        border-top-right-radius: 9px;
+        padding: 4px 4.5%;
         padding-right: 4%;
         justify-content: space-between;
         display: flex;
@@ -719,6 +720,7 @@ header .srch-dv .contact-itrc .sugg-search{
     .section6 span{
         display: flex;
         align-items: center;
+        /* color: black; */
         color: white;
     
     }
@@ -732,6 +734,7 @@ header .srch-dv .contact-itrc .sugg-search{
     div .title p{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 16px;
+        /* color: black; */
         color: white;
         font-weight: 600;
                 padding-bottom: 5%;
@@ -760,34 +763,38 @@ header .srch-dv .contact-itrc .sugg-search{
         justify-content: center;
         align-items: center;
         display: flex;
+        /* color: black; */
         color: white;
         align-items: center;
     }
 
      div .filter p{
         font-family: helvetica;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     div .filter i{
         margin-left: 5px;
-        font-size: 14px;
+        font-size: 16px;
+        /* border: solid 1px white; */
+        /* margin-top: 2px; */
     }
 
     .section6 .product-wrapper{
-        height: 200px;
+        height: 230px;
         background-color: white;
         display: flex;
-        overflow: auto;
+        overflow-x: auto;
+        overflow-y: hidden;
         padding: 0 0;
     }
 
     .section6 .product-wrapper::-webkit-scrollbar{
-        display: none;
+        /* display: none; */
     }
 
     .section6 .product-wrapper a{
-        height: 100%;
+        height: 98%;
         /* border: solid thin silver; */
         background-color: white;
         margin: 0px 0 3px 0;
@@ -796,33 +803,24 @@ header .srch-dv .contact-itrc .sugg-search{
     .section6 .product-wrapper a .product{
         /* border: solid 1px silver; */
         height: 100%;           /*95% CHANGE MADE HERE*/
-        width: 155px;
-        border: solid 0.3px silver;
+        width: 165px;
+        /* border: solid 0.3px rgba(232, 232, 232, 0.815); */
+        padding: 0 5px;
         align-items: baseline;
         flex-direction: column;
-        /* border-radius: 5px; */
-        box-shadow: rgb(0 0 0 / 4%) 3px 1.8px 8px;
-        margin-right: 5px;
+        /* box-shadow: rgb(0 0 0 / 4%) 3px 1.8px 8px; */
+        /* margin-right: 5px; */
         background-color: white;
         border-top: none !important;
         border-bottom: none !important;
     }
     /*                      PRODUCT SPECIFIC  */
     .section6 .product-wrapper a .product-specific{
-        /* border: solid 1px silver; */
-        height: 100%;
-        width: 155px;
-        border: solid 0.3px silver;
-        align-items: baseline;
-        flex-direction: column;
-        /* border-radius: 5px; */      /*95% CHANGE MADE HERE*/
-        box-shadow: rgb(0 0 0 / 4%) 3px 1.8px 8px;
-        margin-right: 5px;
-        background-color: white;
+        
     }
 
     .section6 .product-wrapper a .product .card-img{
-        height: 40%;
+        height: 55%;
         width: 95%;
         margin: 5px auto;
         border: solid 0.01px rgb(235, 232, 232);
@@ -834,6 +832,7 @@ header .srch-dv .contact-itrc .sugg-search{
         width: 100%;
         height: 100%;
         object-fit:cover;
+        border-radius: 5px;
         /* border: solid Gold; */
     }
 
@@ -843,7 +842,7 @@ header .srch-dv .contact-itrc .sugg-search{
         margin: 0 auto;
         /* border: solid 1px gold; */
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         color: rgb(80, 80, 80);
         padding: 0 !important;
     }
@@ -863,27 +862,29 @@ header .srch-dv .contact-itrc .sugg-search{
 
     .section6 .product-wrapper a .product .product-store p{
         color: rgb(80, 80, 80);
+        text-overflow: ellipsis;
+        margin-left: 5px;
     }
  
     /* PRODUCT SPECIFIC         /* PRODUCT NAME */
     .section6 .product-wrapper a .product-specific .product-store p{
         font-size: 15.5px !important;
-        /* border: solid 1px   Gold; */
-        height: 40px;
-        margin-bottom: -15px;
+        border: solid 1px   Gold;
+        /* height: 20px; */
+        /* margin-bottom: -15px; */
         width: 95%;
         text-align: left;
         text-overflow: ellipsis;
-        overflow: hidden;
+        overflow:hidden;
+        white-space: nowrap;
         margin-left: 5px;
-        word-break: break-all;
     }
  
 
     .section6 .product-wrapper a .product .product-del-time{
         width: 95%;
         margin: 0 auto;
-        justify-content: right;
+        justify-content: left;
         color: rgb(80, 80, 80);
         font-size: 14px;
     }
@@ -893,7 +894,7 @@ header .srch-dv .contact-itrc .sugg-search{
         width: 95%;
         margin: 0 auto;
         height: 18%;
-        justify-content: right;
+        justify-content: left;
         color: rgb(80, 80, 80);
         font-size: 14px;
         align-items: flex-end;
@@ -912,23 +913,132 @@ header .srch-dv .contact-itrc .sugg-search{
 
     .section6 .product-wrapper a .product .product-store-status .open{
         /* display: none; */
-        font-family: "Montserrat";
+        font-family: 'Open Sans';
         color: rgb(10, 197, 10);
+        font-size: 13px;
     }
 
     .section6 .product-wrapper a .product .product-store-status .closed{
         display: none;
         /* color: rgb(221, 0, 0); */
-        color: grey;
-        font-family: "Montserrat";
+        color: rgb(192, 192, 192, 0.6);
+        font-family: "Open Sans";
     }
 
     .section6 .product-wrapper a .product .product-store-status .rated{
         font-size: 13px;
         /* color: rgb(221, 0, 0); */
-        color: grey;
-        font-family: "Montserrat";
+        color: rgb(192, 192, 192, 0.8);
+        font-family: "Open Sans";
     }
+
+
+
+
+
+
+.sectiondeal{
+    height: 300px;
+    /* border: solid 1px gold; */
+    flex-direction: column;
+    margin-top: 10px;
+    justify-content: left;
+    align-items: center;
+}
+
+.sectiondeal .title{
+    padding: 0px 0 10px 0;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    /* border: solid thin silver; */
+    width: 100%;
+}
+
+.sectiondeal .title h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+}
+
+.sectiondeal .box{
+    width: 100%;
+    /* display: flex; */
+}
+
+
+.sectiondeal .box a{
+    margin: 0 auto;
+}
+
+.sectiondeal .box a .unit{
+    flex-direction: column;
+    width: 260px;
+    height: 250px;
+    margin: 0 auto;
+    border: solid thin silver;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.sectiondeal .box a .unit img{
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+
+.sectiondeal .box a .unit .span1{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.sectiondeal .box a .unit .span1 .span-dot{
+    background-color:rgb(109, 109, 109);
+    border-radius: 100%;
+    padding: 3px;
+    margin: auto 0;
+}
+
+.sectiondeal .box a .unit .span1 h4{
+    color: rgb(109, 109, 109);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    margin: auto 0;
+    margin-left: 10px;
+}
+
+.sectiondeal .box a .unit p{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 3px;
+    font-weight: bold;
+}
+.sectiondeal .box a .unit span .p{
+    color: rgb(109, 109, 109);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+
+.sectiondeal .box a .unit .p1{
+    color: gray;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    margin-top: 3px;
+}
+
+.sectiondeal .box a .unit .p2{
+    margin-top: 10%;
+    color: rgb(3, 154, 3);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
 
 
 
@@ -975,9 +1085,10 @@ header .srch-dv .contact-itrc .sugg-search{
     .section7 .quick-buy-product{
         background-color: white;
         height: 140px;    
-        width: 100%;
+        width: 350px;
         /* border: solid; */
         display: flex;
+        overflow-y: auto;
     } 
 
 
@@ -990,11 +1101,12 @@ header .srch-dv .contact-itrc .sugg-search{
 
     .section7 .quick-buy-product .product{
         height: 100%;
-        width: 100%;
+        width: 300px;
         display: flex;
         border: solid silver 1px;
         border-radius: 15px;   
         box-shadow: rgb(0 0 0 / 4%) 3px 1.8px 8px;
+        margin-right: 10px;
         
    } 
 
@@ -1008,8 +1120,8 @@ header .srch-dv .contact-itrc .sugg-search{
 
     .section7 .quick-buy-product .product-image img{
         border-radius: 15px;
-        height: 80%;
-        width: 80%;
+        height: 90%;
+        width: 90%;
    } 
 
    .section7 .quick-buy-product .product-description{
@@ -1100,7 +1212,7 @@ header .srch-dv .contact-itrc .sugg-search{
         background-color: orange;
         box-shadow: 1px 1px 3px rgb(162, 162, 162);
         align-items: center !important;
-        top: 90vh;
+        top: 85vh;
         left: 80%;
         position: fixed;
     }
