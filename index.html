@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,6 +44,9 @@
                                 <div class="top-text"> <p>You</p> </div>
                                 <div class="btm-text"> <p>Settings, Order history, favourites..</p> </div>
                             </div>
+                            <div class="icon">
+                                <i class="material-icons">chevron_right</i>
+                            </div>
                         </div>
                     </a>
                     <a href="#">
@@ -53,16 +57,21 @@
                             <div class="title">
                                 <p>Customer support</p>
                             </div>
+                            <div class="icon">
+                                <i class="material-icons">call</i>
+                            </div>
                         </div>
                     </a>
                     <a href="#">
                         <div class="option">
-                            
-                            <div class="title" style="width: 80%; justify-content: right; border:  silver 1px;">
+                            <div class="icon">
+                                <i class="material-icons">redeem</i>
+                            </div>
+                            <div class="title" style="width: 80%; justify-content: left; border:  silver 1px;">
                                 <p>Promo | Under 5k deals </p>
                             </div>
                             <div class="icon" style="width: ; justify-content: left; border:  silver 1px;">
-                                <i class="material-icons" style="font-size: 24px; color: rgba(43, 43, 43, 0.5); margin-left: 10px;">east</i>
+                                <i class="material-icons" style="color: orangered; margin-left: 10px;">chevron_right</i>
                             </div>
                         </div>
                     </a>
@@ -73,6 +82,9 @@
                             </div>
                             <div class="title">
                                 <p class="pjoin"> Join us as a restaurant +</p>
+                            </div>
+                             <div class="icon">
+                                <i class="material-icons">chevron_right</i>
                             </div>
                         </div>
                     </a>
@@ -93,6 +105,13 @@
                 </div>
                 <div class="FAQ-option">
                     <a href="#">Have a question? <span>FAQ</span></a>
+                </div>
+                <div class="logout">
+                    <i class="material-icons">logout</i>
+                    <p>Logout</p>
+                </div>
+                <div class="copyright">
+                    <p>Copyright <span class="sp2"></span> <span class="sp">KartLovesWe.</span> All rights reserved.</p>
                 </div>
             </div>
         </section>
@@ -441,7 +460,7 @@
                 <a href="#">
                     <span class="product">
                         <span class="card-img">
-                            <img src="dodo-pizza-daily-boost.webp" alt="">
+                            <img src="chicken-bbqchicken-5piece-wings-dodopizza.jpeg" alt="">
                         </span> 
                         <span class="product-store">
                             <img src="kfc logo.png" alt="">
@@ -535,7 +554,7 @@
                         <span class="span1">
                             <p class="p">Dodo Pizza</p>
                             <span class="span-dot"></span>
-                            <h4>rated: 7/10</h4>
+                            <h5>rated: 7/10</h4>
                         </span>
                             
                             <p class="p1">Dodo Pizza family deal designed for a faily of 5 or more.</p>
@@ -841,7 +860,7 @@ setTimeout(function()
 {document.getElementById("cat-feed").scroll(0, 90);}, 4000);}
 
 function makeSideBarAppear(){
-    document.getElementById("sidebar").style.width = "350px";
+    document.getElementById("sidebar").style.width = "100%";
     document.getElementById("sidebar").style.height = "100%";
     // document.getElementById("sidebar").style.visibility = "visible";
     document.getElementById("sidebar").style.opacity = "1";
