@@ -412,7 +412,7 @@ body{
     width: 100%;
     justify-content: center;
     /* border: solid 1px silver; */
-    margin-top: 40%;
+    margin-top: 20%;
 }
 
 .section-sidebar .wrapper .copyright p{
@@ -477,7 +477,7 @@ header{
     box-shadow: none;
     width: auto;
     margin:0;
-    height: 50px;
+    height: 40px;
     /* position: -webkit-sticky;
     position: sticky; */
     top: 0;
@@ -790,7 +790,7 @@ header .srch-dv .contact-itrc .sugg-search{
         /* background-color: white !important; */
         border-top-left-radius: 9px;
         border-top-right-radius: 9px;
-        padding: 4px 4.5%;
+        padding: 8px 4.5%;
         padding-right: 4%;
         justify-content: space-between;
         display: flex;
@@ -864,6 +864,9 @@ header .srch-dv .contact-itrc .sugg-search{
         overflow-x: auto;
         overflow-y: hidden;
         padding: 0 0;
+        scroll-snap-type: x mandatory;
+        scroll-snap-align: start;
+        scroll-behavior: smooth;
     }
 
     .section6 .product-wrapper::-webkit-scrollbar{
@@ -875,6 +878,7 @@ header .srch-dv .contact-itrc .sugg-search{
         /* border: solid thin silver; */
         background-color: white;
         margin: 0px 0 3px 0;
+        scroll-snap-align: start;
     }
 
     .section6 .product-wrapper a .product{
@@ -931,7 +935,7 @@ header .srch-dv .contact-itrc .sugg-search{
         /* border: solid 1px gold; */
         display: flex;
         /* justify-content: space-between; */
-        color: rgb(80, 80, 80);
+        color: black;
         padding: 0 !important;
     }
     
@@ -950,7 +954,7 @@ header .srch-dv .contact-itrc .sugg-search{
     }
 
     .section6 .product-wrapper a .product .product-store p{
-        color: rgb(80, 80, 80);
+        color: black;
         text-overflow: ellipsis;
         margin-left: 5px;
         font-weight: bold;
@@ -977,7 +981,7 @@ header .srch-dv .contact-itrc .sugg-search{
         margin: 0 auto;
         height: 18%;
         justify-content: left;
-        color: rgb(80, 80, 80);
+        color: black;
         font-size: 14px;
         align-items: flex-end;
         /* border: solid 1px gold; */
@@ -989,7 +993,7 @@ header .srch-dv .contact-itrc .sugg-search{
         margin: 0 auto;
         height: 18%;
         justify-content: left;
-        color: rgb(80, 80, 80);
+        color: black;
         font-size: 14px;
         align-items: flex-end;
         /* border: solid 1px gold; */
